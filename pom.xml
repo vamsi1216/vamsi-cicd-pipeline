@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.4.0-20220824</app.runtime>
-		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.9.1</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -27,7 +27,7 @@
     <configuration>
         <cloudHubDeployment>
             <uri>https://anypoint.mulesoft.com</uri>
-            <muleVersion>4.2.2</muleVersion>
+            <muleVersion>3.9.1/muleVersion>
             <username>vamsi01020105</username>
             <password>Vamsi@123</password>
             <applicationName>mulesoft-cicd-sample1</applicationName>
@@ -43,12 +43,7 @@
 				<artifactId>maven-clean-plugin</artifactId>
 				<version>3.2.0</version>
 			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-			</plugin>
+			
 		</plugins>
 	</build>
 
